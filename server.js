@@ -9,6 +9,10 @@ app.get("/health", (req, res) => {
   res.status(200).json({ status: "ok fine" });
 });
 
+app.get("/collage", (req, res) => {
+  res.status(200).json({ status: "ok" });
+});
+
 const PORT = 80;
 
 app.listen(PORT, () => {
