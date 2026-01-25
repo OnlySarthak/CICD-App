@@ -1,15 +1,15 @@
 const express = require("express");
 const app = express();
 
-app.get("/", (req, res) => {
+app.use("/", (req, res) => {
   res.send("Server is running on 80....");
 });
 
-app.get("/health", (req, res) => {
+app.use("/health", (req, res) => {
   res.status(200).json({ status: "ok fine 80₹" });
 });
 
-app.get("/collage", (req, res) => {
+app.use("/collage", (req, res) => {
   res.status(200).json({ status: "ok" });
 });
 
