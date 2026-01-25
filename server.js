@@ -6,7 +6,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/health", (req, res) => {
-  res.status(200).json({ status: "ok fine" });
+  res.status(200).json({ status: "ok fine 80₹" });
 });
 
 app.get("/collage", (req, res) => {
