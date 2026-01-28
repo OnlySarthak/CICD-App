@@ -34,4 +34,5 @@ jobs:
             cd /home/ec2-user/CICD-App
             git pull origin master
             npm install
-            pm2 restart cicdApp || pm2 start server.js --name cicdApp
+            pm2 restart CICD-Appp || pm2 start server.js --name CICD-Appp
+            echo "Deployment completed."
