@@ -32,7 +32,11 @@ jobs:
           script: |
             set -e
             cd /home/ec2-user/CICD-App
-            git pull origin master
+
+            git fetch origin
+            git reset --hard origin/master
+
             npm install
             pm2 restart CICD-Appp || pm2 start server.js --name CICD-Appp
+
             echo "Deployment completed."
