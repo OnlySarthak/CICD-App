@@ -3,7 +3,7 @@ const app = express();
 
 
 app.use("/health", (req, res) => {
-  res.status(200).send("Server is healthy");
+  res.status(200).send("Server is healthy and wealthy");
 });
 
 app.use("/collage", (req, res) => {
