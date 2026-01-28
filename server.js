@@ -3,15 +3,15 @@ const app = express();
 
 
 app.use("/health", (req, res) => {
-  res.send("Server is healthy");
+  res.status(200).send("Server is healthy");
 });
 
 app.use("/collage", (req, res) => {
-  res.send("your are at collage route");
+  res.status(200).send("your are at collage route");
 });
 
 app.use("/", (req, res) => {
-  res.send("Server is running on 80....");
+  res.status(200).send("Server is running on 3000....");
 });
 const PORT = 3000;
 

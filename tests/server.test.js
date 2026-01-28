@@ -4,6 +4,7 @@ const app = require('../server');
 describe("Server health check", () => {
   it("should respond on /health", async () => {
     const res = await request(app).get("/health");
+    expect(res.text).toBe("Server is healthy");
     expect(res.statusCode).toBe(200);
   });
 });
